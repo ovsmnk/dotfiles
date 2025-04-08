@@ -8,6 +8,7 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		lazy = false,
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = { "pyright", "emmet_ls", "cssls", "tailwindcss", "html", "ts_ls", "lua_ls" },
