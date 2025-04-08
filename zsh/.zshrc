@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
-export EDITOR="vim"
+export EDITOR="nvim"
 
 ZSH_THEME="agnoster"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
