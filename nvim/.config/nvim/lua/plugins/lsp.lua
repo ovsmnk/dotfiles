@@ -11,7 +11,16 @@ return {
 		lazy = false,
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "pyright", "emmet_ls", "cssls", "tailwindcss", "html", "ts_ls", "lua_ls" },
+				ensure_installed = {
+					"pyright",
+					"emmet_ls",
+					"cssls",
+					"tailwindcss",
+					"html",
+					"ts_ls",
+					"lua_ls",
+					"marksman",
+				},
 			})
 		end,
 	},
@@ -54,6 +63,9 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
+			})
+			lspconfig.marksman.setup({
+				capabilities = capabilities,
 			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show information" })

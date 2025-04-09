@@ -18,12 +18,6 @@ return {
 						action = "Telescope find_files",
 						key = "f",
 					},
-					-- {
-					-- 	desc = " vault",
-					-- 	group = "DiagnosticHint",
-					-- 	action = "Telescope app",
-					-- 	key = "v",
-					-- },
 					{
 						desc = " dotfiles",
 						group = "Number",
