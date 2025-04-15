@@ -9,7 +9,7 @@ return {
 					filetypes = { "lua" },
 				}),
 				null_ls.builtins.formatting.prettier.with({
-					filetypes = { "javascript", "html", "css" },
+					filetypes = { "javascript", "css" },
 				}),
 				null_ls.builtins.formatting.black.with({
 					filetypes = { "python" },
