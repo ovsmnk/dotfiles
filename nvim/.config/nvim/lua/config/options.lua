@@ -11,12 +11,12 @@ opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "python",
-  callback = function()
-    vim.opt_local.tabstop = 4
-    vim.opt_local.softtabstop = 4
-    vim.opt_local.shiftwidth = 4
-  end,
+	pattern = "python",
+	callback = function()
+		vim.opt_local.tabstop = 4
+		vim.opt_local.softtabstop = 4
+		vim.opt_local.shiftwidth = 4
+	end,
 })
 opt.expandtab = true
 opt.autoindent = true
@@ -36,6 +36,7 @@ vim.api.nvim_create_autocmd("FileType", {
 	callback = function()
 		vim.opt_local.wrap = true
 		vim.opt_local.breakindent = true
+		vim.opt_local.conceallevel = 2
 	end,
 })
 
